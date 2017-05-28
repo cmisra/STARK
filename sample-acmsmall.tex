@@ -1,0 +1,162 @@
+\documentclass[format=acmsmall, review=false, screen=true, table]{acmart}
+
+\usepackage{booktabs} % For formal tables
+
+\usepackage[ruled]{algorithm2e} % For algorithms
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{graphicx}
+%\usepackage[table]{xcolor}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usepackage{lipsum}
+\usetikzlibrary{backgrounds}
+\tikzset{>=latex}
+\usetikzlibrary{arrows}
+\usepackage{tikz}
+\usetikzlibrary{positioning,fit,calc}
+\usepackage{epstopdf}
+\usepackage{filecontents}
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+
+\makeatletter
+\newcommand\resetstackedplots{
+	\makeatletter
+	\pgfplots@stacked@isfirstplottrue
+	\makeatother
+	\addplot [forget plot,draw=none] coordinates{(1,0) (2,0) (3,0)};
+}
+\makeatother
+\pgfplotsset{compat=1.5}
+
+
+% Metadata Information
+\acmJournal{TWEB}
+\acmVolume{9}
+\acmNumber{4}
+\acmArticle{39}
+\acmYear{2010}
+\acmMonth{3}
+\copyrightyear{2009}
+%\acmArticleSeq{9}
+
+% Copyright
+%\setcopyright{acmcopyright}
+\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+% DOI
+\acmDOI{0000001.0000001}
+
+% Paper history
+\received{February 2007}
+\received[revised]{March 2009}
+\received[accepted]{June 2009}
+
+
+% Document starts
+\begin{document}
+% Title portion. Note the short title for running heads 
+\title[Stark: Fast and Scalable Strassen's Matrix Multiplication using Apache Spark]{Stark: Fast and Scalable Strassen's Matrix Multiplication using Apache Spark}  
+\author{Chandan Misra}
+%\orcid{1234-5678-9012-3456}
+\affiliation{%
+  \institution{Indian Institute of Technology Kharagpur}
+  \streetaddress{104 Jamestown Rd}
+  \city{Williamsburg}
+  \state{VA}
+  \postcode{23185}
+  \country{USA}}
+\author{Sourangshu Bhattacharya}
+\affiliation{%
+  \institution{Indian Institute of Technology Kharagpur}
+  \department{School of Engineering}
+  \city{Charlottesville}
+  \state{VA}
+  \postcode{22903}
+  \country{USA}
+}
+\author{Soumya K. Ghosh}
+\affiliation{%
+  \institution{Indian Institute of Technology Kharagpur}
+  \city{Prague}
+  \country{Czech Republic}}
+%\author{Tian He}
+%\affiliation{%
+%  \institution{University of Minnesota}
+%  \country{USA}}
+%\author{Chengdu Huang}
+%\author{John A. Stankovic}
+%\author{Tarek F. Abdelzaher}
+%\affiliation{%
+%  \institution{University of Virginia}
+%  \department{School of Engineering}
+%  \city{Charlottesville}
+%  \state{VA}
+%  \postcode{22903}
+%  \country{USA}
+%}
+
+\begin{abstract}
+This paper presents a new fast, highly scalable distributed matrix multiplication algorithm on Apache Spark, called Stark, based on Strassen's matrix multiplication algorithm. Stark preserves Strassen's 7 multiplication scheme in distributed environment and thus achieves faster execution. It is based on two new ideas; it creates a recursion tree of computation where each level of such tree corresponds to division and combination of distributed matrix blocks in the form of \textit{Resilient Distributed Datasets} (RDDs); It processes each divide and combine step in parallel and memorize the sub-matrices by intelligently tagging matrix blocks in it. To the best of our knowledge, Stark is the first Strassen's implementation in Spark platform. We show experimentally that Stark has a strong scalability with increasing matrix size enabling us to multiply two $16384\times 16384$ matrices with 28\% and 36\% less execution time than \textit{Marlin} and \textit{MLLib} respectively, state-of-the-art matrix multiplication approaches based on Spark. %We also show that our technique outperforms \textit{MLLib} and \textit{Marlin}, state-of-the-art matrix multiplication approach based on Spark.
+
+%Large scale matrix multiplication is computationally demanding and unsuitable for computation on a single machine. In this paper, we present a highly scalable and efficient implementation for matrix multiplication on Apache Spark platform. Our technique implements Strassen's block matrix multiplication technique $O(n^{2.807})$ which improves over naive matrix multiplication $O(n^{3})$. However, it is difficult to implement the parallel version of Strassen's algorithm for its recursive nature Secondly, though it is a divide and conquer algorithm, the computation of an element in any partition depends on elements of other partitions. In each divide phase, the algorithm must memorize the sub-matrices so that they can be further divided or combined at a later stage distributedly. To overcome these challenges, we implement tail recursion, which divides two matrices into seven sub-matrices distributedly in each recursive call and memorize them by intelligently tagging each block matrix. It combines the sub-matrices by recalling the tags and finally makes the final product matrix. The iterative algorithm makes Spark a good choice and to the best of our knowledge, our method is the first Strassen's implementation in Apache Spark platform. We show experimentally that our implementation has a strong scalability with increasing matrix size enabling us to multiply two $16384\times 16384$ matrices in less than 3 minutes. We also show that our technique outperforms \textit{MLLib} and \textit{Marlin}, state-of-the-art matrix multiplication approach based on Apache Spark.
+
+%Matrix operations are basic building blocks for scientific computations in many fields like machine learning, network theory, and data mining and also have applications in domains like numerical weather prediction, climate science, and mining engineering. Sometimes they employ interpolation techniques on large datasets which resulted in large scale matrix multiplication, an important matrix operation. Large scale matrix multiplication is computationally demanding and unsuitable for computation on a single machine. In this paper, we present a highly scalable and efficient implementation for matrix multiplication on Apache Spark platform to reduce the time required for large scale interpolation algorithm. Our technique implements Strassen's block matrix multiplication technique ($O(n^{2.807})$) which improves over naive matrix multiplication ($O(n^{3})$). However, it is difficult to implement the parallel version of Strassen's algorithm for its recursive nature and also made it a bad choice for Hadoop MapReduce framework. Secondly, though it is a divide and conquer algorithm, the computation of an element in any partition depends on elements of other partitions. In each divide phase, the algorithm must memorize the sub-matrices so that they can be further divided or combined at a later stage distributedly. To overcome these challenges, we implement tail recursion, which divides two matrices into seven sub-matrices distributedly in each recursive call and memorize them by intelligently tagging each block matrix. It combines the sub-matrices by recalling the tags and finally makes the final product matrix. The iterative algorithm makes Spark a good choice and to the best of our knowledge, our method is the first Strassen's implementation in Apache Spark platform. We show experimentally that our implementation has a strong scalability with increasing matrix size enabling us to multiply two 16384x16384 matrices in less than 15 minutes. We also show that our technique outperforms MLLib, a state-of-the-art machine learning library based on Apache Spark.
+\end{abstract}
+
+
+%
+% The code below should be generated by the tool at
+% http://dl.acm.org/ccs.cfm
+% Please copy and paste the code instead of the example below. 
+%
+\begin{CCSXML}
+	<ccs2012>
+	<concept>
+	<concept_id>10010147.10010919.10010172.10003817</concept_id>
+	<concept_desc>Computing methodologies~MapReduce algorithms</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies~MapReduce algorithms}
+
+%
+% End generated code
+%
+
+% We no longer use \terms command
+%\terms{Design, Algorithms, Performance}
+
+\keywords{Linear Algebra, Matrix Multiplication,
+Strassen's Algorithm, Spark}
+
+
+\thanks{This work is supported by the National Science Foundation,
+  under grant CNS-0435060, grant CCR-0325197 and grant EN-CS-0329609.
+
+  Author's addresses: C. Misra, Advanced Technology Development Center, Indian Institute of Technology Kharagpur; S. Bhattacharya {and} S. K. Ghosh, Department of Computer Science and Engineering, Indian Institute of Technology Kharagpur}
+
+
+\maketitle
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{C. Misra et al.}
+
+\input{samplebody-journals}
+
+
+\end{document}

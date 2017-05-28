@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: sample-acmsmall.aux
+The style file: ACM-Reference-Format.bst
+Database file #1: sample-bibliography.bib
+Repeated entry---line 422 of file sample-bibliography.bib
+ : @article{hunold2008combining
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 433 of file sample-bibliography.bib
+ : @inproceedings{seo2010hama
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 480 of file sample-bibliography.bib
+ : @article{kumar1995tensor
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 502 of file sample-bibliography.bib
+ : @article{grayson1996high
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 513 of file sample-bibliography.bib
+ : @inproceedings{luo1995scalable
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 558 of file sample-bibliography.bib
+ : @article{song2006experiments
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--empty publisher in ballard2012communication
+Warning--empty address in ballard2012communication
+Warning--empty publisher in choi1992scalapack
+Warning--empty address in choi1992scalapack
+Warning--empty publisher in demmel2013communication
+Warning--empty address in demmel2013communication
+Warning--empty publisher in gu2015efficient
+Warning--empty address in gu2015efficient
+Warning--can't use both volume and number fields in isard2007dryad
+Warning--empty publisher in isard2007dryad
+Warning--empty address in isard2007dryad
+Warning--empty publisher in lipshitz2012communication
+Warning--empty address in lipshitz2012communication
+Warning--empty publisher in luo1995scalable
+Warning--empty address in luo1995scalable
+Warning--empty publisher in ohtaki2004parallel
+Warning--empty address in ohtaki2004parallel
+Warning--empty publisher in qian2012madlinq
+Warning--empty address in qian2012madlinq
+Warning--empty publisher in seo2010hama
+Warning--empty address in seo2010hama
+Warning--empty publisher in solomonik2011improving
+Warning--empty address in solomonik2011improving
+Warning--empty publisher in solomonik2011communication
+Warning--empty address in solomonik2011communication
+Warning--empty publisher in solomonik2012matrix
+Warning--empty address in solomonik2012matrix
+Warning--empty publisher in thottethodi1998tuning
+Warning--empty address in thottethodi1998tuning
+Warning--empty publisher in xin2013graphx
+Warning--empty address in xin2013graphx
+(There were 6 error messages)

@@ -1,0 +1,548 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Agarwal, Balle, Gustavson, Joshi, and
+  Palkar}{Agarwal et~al\mbox{.}}{1995}]%
+        {agarwal1995three}
+\bibfield{author}{\bibinfo{person}{Ramesh~C Agarwal},
+  \bibinfo{person}{Susanne~M Balle}, \bibinfo{person}{Fred~G Gustavson},
+  \bibinfo{person}{M Joshi}, {and} \bibinfo{person}{P Palkar}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{A three-dimensional approach to parallel matrix
+  multiplication}.
+\newblock \bibinfo{journal}{{\em IBM Journal of Research and Development\/}}
+  \bibinfo{volume}{39}, \bibinfo{number}{5} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{575--582}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Apache hadoop project}{Apache hadoop
+  project}{2016}]%
+        {hadoop}
+Apache hadoop project \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{{Apache hadoop project}}.
+\newblock \bibinfo{howpublished}{\url{https://hadoop.apache.org/}}.
+  (\bibinfo{year}{2016}).
+\newblock
+\newblock
+\shownote{[Online; accessed 23-December-2016].}
+
+
+\bibitem[\protect\citeauthoryear{Apache spark, lightning-fast cluster
+  computing}{Apache spark, lightning-fast cluster computing}{2016}]%
+        {spark}
+Apache spark, lightning-fast cluster computing \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{{Apache spark, lightning-fast cluster computing}}.
+\newblock \bibinfo{howpublished}{\url{https://spark.apache.org/}}.
+  (\bibinfo{year}{2016}).
+\newblock
+\newblock
+\shownote{[Online; accessed 23-December-2016].}
+
+
+\bibitem[\protect\citeauthoryear{Ballard, Demmel, Holtz, Lipshitz, and
+  Schwartz}{Ballard et~al\mbox{.}}{2012b}]%
+        {ballard2012communication}
+\bibfield{author}{\bibinfo{person}{Grey Ballard}, \bibinfo{person}{James
+  Demmel}, \bibinfo{person}{Olga Holtz}, \bibinfo{person}{Benjamin Lipshitz},
+  {and} \bibinfo{person}{Oded Schwartz}.} \bibinfo{year}{2012}\natexlab{b}.
+\newblock \showarticletitle{Communication-optimal parallel algorithm for
+  strassen's matrix multiplication}. In \bibinfo{booktitle}{{\em Proceedings of
+  the twenty-fourth annual ACM symposium on Parallelism in algorithms and
+  architectures}}. ACM, \bibinfo{pages}{193--204}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ballard, Demmel, Holtz, and Schwartz}{Ballard
+  et~al\mbox{.}}{2012a}]%
+        {ballard2012graph}
+\bibfield{author}{\bibinfo{person}{Grey Ballard}, \bibinfo{person}{James
+  Demmel}, \bibinfo{person}{Olga Holtz}, {and} \bibinfo{person}{Oded
+  Schwartz}.} \bibinfo{year}{2012}\natexlab{a}.
+\newblock \showarticletitle{Graph expansion and communication costs of fast
+  matrix multiplication}.
+\newblock \bibinfo{journal}{{\em Journal of the ACM (JACM)\/}}
+  \bibinfo{volume}{59}, \bibinfo{number}{6} (\bibinfo{year}{2012}),
+  \bibinfo{pages}{32}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Berntsen}{Berntsen}{1989}]%
+        {berntsen1989communication}
+\bibfield{author}{\bibinfo{person}{Jarle Berntsen}.}
+  \bibinfo{year}{1989}\natexlab{}.
+\newblock \showarticletitle{Communication efficient matrix multiplication on
+  hypercubes}.
+\newblock \bibinfo{journal}{{\em Parallel computing\/}} \bibinfo{volume}{12},
+  \bibinfo{number}{3} (\bibinfo{year}{1989}), \bibinfo{pages}{335--342}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cannon}{Cannon}{1969}]%
+        {cannon1969cellular}
+\bibfield{author}{\bibinfo{person}{Lynn~E Cannon}.}
+  \bibinfo{year}{1969}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em A CELLULAR COMPUTER TO IMPLEMENT THE KALMAN
+  FILTER ALGORITHM.}}
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{DTIC
+  Document}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Choi, Dongarra, Pozo, and Walker}{Choi
+  et~al\mbox{.}}{1992}]%
+        {choi1992scalapack}
+\bibfield{author}{\bibinfo{person}{Jaeyoung Choi}, \bibinfo{person}{Jack~J
+  Dongarra}, \bibinfo{person}{Roldan Pozo}, {and} \bibinfo{person}{David~W
+  Walker}.} \bibinfo{year}{1992}\natexlab{}.
+\newblock \showarticletitle{ScaLAPACK: A scalable linear algebra library for
+  distributed memory concurrent computers}. In \bibinfo{booktitle}{{\em
+  Frontiers of Massively Parallel Computation, 1992., Fourth Symposium on
+  the}}. IEEE, \bibinfo{pages}{120--127}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Choi, Walker, and Dongarra}{Choi
+  et~al\mbox{.}}{1994}]%
+        {choi1994pumma}
+\bibfield{author}{\bibinfo{person}{Jaeyoung Choi}, \bibinfo{person}{David~W
+  Walker}, {and} \bibinfo{person}{Jack~J Dongarra}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{PUMMA: Parallel universal matrix multiplication
+  algorithms on distributed memory concurrent computers}.
+\newblock \bibinfo{journal}{{\em Concurrency: Practice and Experience\/}}
+  \bibinfo{volume}{6}, \bibinfo{number}{7} (\bibinfo{year}{1994}),
+  \bibinfo{pages}{543--570}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Colt - Welcome}{Colt - Welcome}{2017}]%
+        {colt}
+Colt - Welcome \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{{Colt - Welcome}}.
+\newblock \bibinfo{howpublished}{\url{https://dst.lbl.gov/ACSSoftware/colt/}}.
+   (\bibinfo{year}{2017}).
+\newblock
+\newblock
+\shownote{[Online; accessed 6-April-2017].}
+
+
+\bibitem[\protect\citeauthoryear{Coppersmith and Winograd}{Coppersmith and
+  Winograd}{1990}]%
+        {coppersmith1990matrix}
+\bibfield{author}{\bibinfo{person}{Don Coppersmith} {and}
+  \bibinfo{person}{Shmuel Winograd}.} \bibinfo{year}{1990}\natexlab{}.
+\newblock \showarticletitle{Matrix multiplication via arithmetic progressions}.
+\newblock \bibinfo{journal}{{\em Journal of symbolic computation\/}}
+  \bibinfo{volume}{9}, \bibinfo{number}{3} (\bibinfo{year}{1990}),
+  \bibinfo{pages}{251--280}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Demmel, Eliahu, Fox, Kamil, Lipshitz,
+  Schwartz, and Spillinger}{Demmel et~al\mbox{.}}{2013}]%
+        {demmel2013communication}
+\bibfield{author}{\bibinfo{person}{James Demmel}, \bibinfo{person}{David
+  Eliahu}, \bibinfo{person}{Armando Fox}, \bibinfo{person}{Shoaib Kamil},
+  \bibinfo{person}{Benjamin Lipshitz}, \bibinfo{person}{Oded Schwartz}, {and}
+  \bibinfo{person}{Omer Spillinger}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Communication-optimal parallel recursive
+  rectangular matrix multiplication}. In \bibinfo{booktitle}{{\em Parallel \&
+  Distributed Processing (IPDPS), 2013 IEEE 27th International Symposium on}}.
+  IEEE, \bibinfo{pages}{261--272}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Desprez and Suter}{Desprez and Suter}{2004}]%
+        {desprez2004impact}
+\bibfield{author}{\bibinfo{person}{Fr{\'e}d{\'e}ric Desprez} {and}
+  \bibinfo{person}{Fr{\'e}d{\'e}ric Suter}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Impact of mixed-parallelism on parallel
+  implementations of the Strassen and Winograd matrix multiplication
+  algorithms}.
+\newblock \bibinfo{journal}{{\em Concurrency and Computation: practice and
+  experience\/}} \bibinfo{volume}{16}, \bibinfo{number}{8}
+  (\bibinfo{year}{2004}), \bibinfo{pages}{771--797}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Douglas, Heroux, Slishman, and Smith}{Douglas
+  et~al\mbox{.}}{1994}]%
+        {douglas1994gemmw}
+\bibfield{author}{\bibinfo{person}{Craig~C Douglas}, \bibinfo{person}{Michael
+  Heroux}, \bibinfo{person}{Gordon Slishman}, {and} \bibinfo{person}{Roger~M
+  Smith}.} \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{GEMMW: a portable level 3 BLAS Winograd variant of
+  Strassen's matrix-matrix multiply algorithm}.
+\newblock \bibinfo{journal}{{\it J. Comput. Phys.}} \bibinfo{volume}{110},
+  \bibinfo{number}{1} (\bibinfo{year}{1994}), \bibinfo{pages}{1--10}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dumitrescu, Roch, and Trystram}{Dumitrescu
+  et~al\mbox{.}}{1994}]%
+        {dumitrescu1994fast}
+\bibfield{author}{\bibinfo{person}{Bogdan Dumitrescu},
+  \bibinfo{person}{Jean-Louis Roch}, {and} \bibinfo{person}{Denis Trystram}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Fast matrix multiplication algorithms on MIMD
+  architectures}.
+\newblock \bibinfo{journal}{{\em Parallel algorithms and applications\/}}
+  \bibinfo{volume}{4}, \bibinfo{number}{1-2} (\bibinfo{year}{1994}),
+  \bibinfo{pages}{53--70}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Grayson and Van De~Geijn}{Grayson and Van
+  De~Geijn}{1996}]%
+        {grayson1996high}
+\bibfield{author}{\bibinfo{person}{Brian Grayson} {and} \bibinfo{person}{Robert
+  Van De~Geijn}.} \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{A high performance parallel Strassen
+  implementation}.
+\newblock \bibinfo{journal}{{\em Parallel Processing Letters\/}}
+  \bibinfo{volume}{6}, \bibinfo{number}{01} (\bibinfo{year}{1996}),
+  \bibinfo{pages}{3--12}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gu, Tang, Wang, Wang, Yin, Yuan, and Huang}{Gu
+  et~al\mbox{.}}{2015}]%
+        {gu2015efficient}
+\bibfield{author}{\bibinfo{person}{Rong Gu}, \bibinfo{person}{Yun Tang},
+  \bibinfo{person}{Zhaokang Wang}, \bibinfo{person}{Shuai Wang},
+  \bibinfo{person}{Xusen Yin}, \bibinfo{person}{Chunfeng Yuan}, {and}
+  \bibinfo{person}{Yihua Huang}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Efficient large scale distributed matrix
+  computation with spark}. In \bibinfo{booktitle}{{\em Big Data (Big Data),
+  2015 IEEE International Conference on}}. IEEE, \bibinfo{pages}{2327--2336}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Huang, Jarrett, Babu, Mukherjee, and
+  Yang}{Huang et~al\mbox{.}}{2015}]%
+        {huang2015cumulon}
+\bibfield{author}{\bibinfo{person}{Botong Huang}, \bibinfo{person}{Nicholas~WD
+  Jarrett}, \bibinfo{person}{Shivnath Babu}, \bibinfo{person}{Sayan Mukherjee},
+  {and} \bibinfo{person}{Jun Yang}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{C{\"u}m{\"u}l{\"o}n: Matrix-based data analytics in
+  the cloud with spot instances}.
+\newblock \bibinfo{journal}{{\em Proceedings of the VLDB Endowment\/}}
+  \bibinfo{volume}{9}, \bibinfo{number}{3} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{156--167}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hunold, Rauber, and R{\"u}nger}{Hunold
+  et~al\mbox{.}}{2008}]%
+        {hunold2008combining}
+\bibfield{author}{\bibinfo{person}{Sascha Hunold}, \bibinfo{person}{Thomas
+  Rauber}, {and} \bibinfo{person}{Gudula R{\"u}nger}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Combining building blocks for parallel multi-level
+  matrix multiplication}.
+\newblock \bibinfo{journal}{{\it Parallel Comput.}} \bibinfo{volume}{34},
+  \bibinfo{number}{6} (\bibinfo{year}{2008}), \bibinfo{pages}{411--426}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Isard, Budiu, Yu, Birrell, and Fetterly}{Isard
+  et~al\mbox{.}}{2007}]%
+        {isard2007dryad}
+\bibfield{author}{\bibinfo{person}{Michael Isard}, \bibinfo{person}{Mihai
+  Budiu}, \bibinfo{person}{Yuan Yu}, \bibinfo{person}{Andrew Birrell}, {and}
+  \bibinfo{person}{Dennis Fetterly}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Dryad: distributed data-parallel programs from
+  sequential building blocks}. In \bibinfo{booktitle}{{\em ACM SIGOPS operating
+  systems review}}, Vol.~\bibinfo{volume}{41}. ACM, \bibinfo{pages}{59--72}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kumar, Huang, Sadayappan, and Johnson}{Kumar
+  et~al\mbox{.}}{1995}]%
+        {kumar1995tensor}
+\bibfield{author}{\bibinfo{person}{Bharat Kumar}, \bibinfo{person}{C-H Huang},
+  \bibinfo{person}{P Sadayappan}, {and} \bibinfo{person}{Rodney~W Johnson}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{A tensor product formulation of Strassen's matrix
+  multiplication algorithm with memory reduction}.
+\newblock \bibinfo{journal}{{\em Scientific Programming\/}}
+  \bibinfo{volume}{4}, \bibinfo{number}{4} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{275--289}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Linear Algebra for Java}{Linear Algebra for
+  Java}{2017}]%
+        {jblas}
+Linear Algebra for Java \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{{Linear Algebra for Java}}.
+\newblock \bibinfo{howpublished}{\url{http://jblas.org/}}.
+  (\bibinfo{year}{2017}).
+\newblock
+\newblock
+\shownote{[Online; accessed 6-April-2017].}
+
+
+\bibitem[\protect\citeauthoryear{Lipshitz, Ballard, Demmel, and
+  Schwartz}{Lipshitz et~al\mbox{.}}{2012}]%
+        {lipshitz2012communication}
+\bibfield{author}{\bibinfo{person}{Benjamin Lipshitz}, \bibinfo{person}{Grey
+  Ballard}, \bibinfo{person}{James Demmel}, {and} \bibinfo{person}{Oded
+  Schwartz}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Communication-avoiding parallel strassen:
+  Implementation and performance}. In \bibinfo{booktitle}{{\em Proceedings of
+  the International Conference on High Performance Computing, Networking,
+  Storage and Analysis}}. IEEE Computer Society Press, \bibinfo{pages}{101}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Luo and Drake}{Luo and Drake}{1995}]%
+        {luo1995scalable}
+\bibfield{author}{\bibinfo{person}{Qingshan Luo} {and} \bibinfo{person}{John~B
+  Drake}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{A scalable parallel Strassen's matrix
+  multiplication algorithm for distributed-memory computers}. In
+  \bibinfo{booktitle}{{\em Proceedings of the 1995 ACM symposium on Applied
+  computing}}. ACM, \bibinfo{pages}{221--226}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{McColl}{McColl}{1995}]%
+        {mccoll1995bsp}
+\bibfield{author}{\bibinfo{person}{William~F McColl}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em A BSP realisation of Strassen's algorithm}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}.
+  \bibinfo{institution}{Citeseer}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{McColl and Tiskin}{McColl and Tiskin}{1999}]%
+        {mccoll1999memory}
+\bibfield{author}{\bibinfo{person}{William~F McColl} {and}
+  \bibinfo{person}{Alexandre Tiskin}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Memory-efficient matrix multiplication in the BSP
+  model}.
+\newblock \bibinfo{journal}{{\em Algorithmica\/}} \bibinfo{volume}{24},
+  \bibinfo{number}{3} (\bibinfo{year}{1999}), \bibinfo{pages}{287--297}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Meng, Bradley, Yuvaz, Sparks, Venkataraman,
+  Liu, Freeman, Tsai, Amde, Owen, et~al\mbox{.}}{Meng et~al\mbox{.}}{2016}]%
+        {meng2016mllib}
+\bibfield{author}{\bibinfo{person}{Xiangrui Meng}, \bibinfo{person}{Joseph
+  Bradley}, \bibinfo{person}{B Yuvaz}, \bibinfo{person}{Evan Sparks},
+  \bibinfo{person}{Shivaram Venkataraman}, \bibinfo{person}{Davies Liu},
+  \bibinfo{person}{Jeremy Freeman}, \bibinfo{person}{D Tsai},
+  \bibinfo{person}{Manish Amde}, \bibinfo{person}{Sean Owen}, {and}
+  \bibinfo{person}{others}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Mllib: Machine learning in apache spark}.
+\newblock \bibinfo{journal}{{\em JMLR\/}} \bibinfo{volume}{17},
+  \bibinfo{number}{34} (\bibinfo{year}{2016}), \bibinfo{pages}{1--7}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Norstad}{Norstad}{2009}]%
+        {norstad}
+\bibfield{author}{\bibinfo{person}{John Norstad}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{title}{{A MapReduce algorithm for matrix multiplication}}.
+\newblock
+  \bibinfo{howpublished}{\url{http://norstad.org/matrix-multiply/index.html}}.
+   (\bibinfo{year}{2009}).
+\newblock
+\newblock
+\shownote{[Online; accessed 23-December-2016].}
+
+
+\bibitem[\protect\citeauthoryear{Ohtaki, Takahashi, Boku, and Sato}{Ohtaki
+  et~al\mbox{.}}{2004}]%
+        {ohtaki2004parallel}
+\bibfield{author}{\bibinfo{person}{Yuhsuke Ohtaki}, \bibinfo{person}{Daisuke
+  Takahashi}, \bibinfo{person}{Taisuke Boku}, {and} \bibinfo{person}{Mitsuhisa
+  Sato}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Parallel implementation of Strassen's matrix
+  multiplication algorithm for heterogeneous clusters}. In
+  \bibinfo{booktitle}{{\em Parallel and Distributed Processing Symposium, 2004.
+  Proceedings. 18th International}}. IEEE, \bibinfo{pages}{112}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Qian, Chen, Kang, Chen, Yu, Moscibroda, and
+  Zhang}{Qian et~al\mbox{.}}{2012}]%
+        {qian2012madlinq}
+\bibfield{author}{\bibinfo{person}{Zhengping Qian}, \bibinfo{person}{Xiuwei
+  Chen}, \bibinfo{person}{Nanxi Kang}, \bibinfo{person}{Mingcheng Chen},
+  \bibinfo{person}{Yuan Yu}, \bibinfo{person}{Thomas Moscibroda}, {and}
+  \bibinfo{person}{Zheng Zhang}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{MadLINQ: large-scale distributed matrix computation
+  for the cloud}. In \bibinfo{booktitle}{{\em Proceedings of the 7th ACM
+  european conference on Computer Systems}}. ACM, \bibinfo{pages}{197--210}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Seo, Yoon, Kim, Jin, Kim, and Maeng}{Seo
+  et~al\mbox{.}}{2010}]%
+        {seo2010hama}
+\bibfield{author}{\bibinfo{person}{Sangwon Seo}, \bibinfo{person}{Edward~J
+  Yoon}, \bibinfo{person}{Jaehong Kim}, \bibinfo{person}{Seongwook Jin},
+  \bibinfo{person}{Jin-Soo Kim}, {and} \bibinfo{person}{Seungryoul Maeng}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Hama: An efficient matrix computation with the
+  mapreduce framework}. In \bibinfo{booktitle}{{\em Cloud Computing Technology
+  and Science (CloudCom), 2010 IEEE Second International Conference on}}. IEEE,
+  \bibinfo{pages}{721--726}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Solomonik, Bhatele, and Demmel}{Solomonik
+  et~al\mbox{.}}{2011}]%
+        {solomonik2011improving}
+\bibfield{author}{\bibinfo{person}{Edgar Solomonik}, \bibinfo{person}{Abhinav
+  Bhatele}, {and} \bibinfo{person}{James Demmel}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Improving communication performance in dense linear
+  algebra via topology aware collectives}. In \bibinfo{booktitle}{{\em
+  Proceedings of 2011 International Conference for High Performance Computing,
+  Networking, Storage and Analysis}}. ACM, \bibinfo{pages}{77}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Solomonik and Demmel}{Solomonik and
+  Demmel}{2011}]%
+        {solomonik2011communication}
+\bibfield{author}{\bibinfo{person}{Edgar Solomonik} {and}
+  \bibinfo{person}{James Demmel}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Communication-optimal parallel 2.5 D matrix
+  multiplication and LU factorization algorithms}. In \bibinfo{booktitle}{{\em
+  European Conference on Parallel Processing}}. Springer,
+  \bibinfo{pages}{90--109}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Solomonik and Demmel}{Solomonik and
+  Demmel}{2012}]%
+        {solomonik2012matrix}
+\bibfield{author}{\bibinfo{person}{Edgar Solomonik} {and}
+  \bibinfo{person}{James Demmel}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Matrix multiplication on multidimensional torus
+  networks}. In \bibinfo{booktitle}{{\em International Conference on High
+  Performance Computing for Computational Science}}. Springer,
+  \bibinfo{pages}{201--215}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Song, Dongarra, and Moore}{Song
+  et~al\mbox{.}}{2006}]%
+        {song2006experiments}
+\bibfield{author}{\bibinfo{person}{Fengguang Song}, \bibinfo{person}{Jack
+  Dongarra}, {and} \bibinfo{person}{Shirley Moore}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Experiments with Strassen’s algorithm: from
+  sequential to parallel}.
+\newblock \bibinfo{journal}{{\em Ratio\/}} \bibinfo{volume}{2},
+  \bibinfo{number}{3} (\bibinfo{year}{2006}), \bibinfo{pages}{3--5}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Strassen}{Strassen}{1969}]%
+        {strassen1969gaussian}
+\bibfield{author}{\bibinfo{person}{Volker Strassen}.}
+  \bibinfo{year}{1969}\natexlab{}.
+\newblock \showarticletitle{Gaussian elimination is not optimal}.
+\newblock \bibinfo{journal}{{\it Numer. Math.}} \bibinfo{volume}{13},
+  \bibinfo{number}{4} (\bibinfo{year}{1969}), \bibinfo{pages}{354--356}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Thottethodi, Chatterjee, and
+  Lebeck}{Thottethodi et~al\mbox{.}}{1998}]%
+        {thottethodi1998tuning}
+\bibfield{author}{\bibinfo{person}{Mithuna Thottethodi},
+  \bibinfo{person}{Siddhartha Chatterjee}, {and} \bibinfo{person}{Alvin~R
+  Lebeck}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Tuning Strassen's matrix multiplication for memory
+  efficiency}. In \bibinfo{booktitle}{{\em Proceedings of the 1998 ACM/IEEE
+  conference on Supercomputing}}. IEEE Computer Society,
+  \bibinfo{pages}{1--14}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Van De~Geijn and Watts}{Van De~Geijn and
+  Watts}{1997}]%
+        {van1997summa}
+\bibfield{author}{\bibinfo{person}{Robert~A Van De~Geijn} {and}
+  \bibinfo{person}{Jerrell Watts}.} \bibinfo{year}{1997}\natexlab{}.
+\newblock \showarticletitle{SUMMA: Scalable universal matrix multiplication
+  algorithm}.
+\newblock \bibinfo{journal}{{\em Concurrency-Practice and Experience\/}}
+  \bibinfo{volume}{9}, \bibinfo{number}{4} (\bibinfo{year}{1997}),
+  \bibinfo{pages}{255--274}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wendykier and Nagy}{Wendykier and
+  Nagy}{2010}]%
+        {wendykier2010parallel}
+\bibfield{author}{\bibinfo{person}{Piotr Wendykier} {and}
+  \bibinfo{person}{James~G Nagy}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Parallel colt: A high-performance java library for
+  scientific computing and image processing}.
+\newblock \bibinfo{journal}{{\em ACM transactions on mathematical software
+  (TOMS)\/}} \bibinfo{volume}{37}, \bibinfo{number}{3} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{31}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xin, Gonzalez, Franklin, and Stoica}{Xin
+  et~al\mbox{.}}{2013}]%
+        {xin2013graphx}
+\bibfield{author}{\bibinfo{person}{Reynold~S Xin}, \bibinfo{person}{Joseph~E
+  Gonzalez}, \bibinfo{person}{Michael~J Franklin}, {and} \bibinfo{person}{Ion
+  Stoica}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Graphx: A resilient distributed graph system on
+  spark}. In \bibinfo{booktitle}{{\em First International Workshop on Graph
+  Data Management Experiences and Systems}}. ACM, \bibinfo{pages}{2}.
+\newblock
+
+
+\end{thebibliography}
