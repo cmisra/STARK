@@ -1,0 +1,1 @@
+Stark is Distributed Strassen's in Apache Spark
